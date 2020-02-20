@@ -1,4 +1,4 @@
-package kuma.lc142_Linked_List_Cycle_II;
+package kuma.lc0002_Add_Two_Numbers;
 
 public class ListNode {
     int val;
@@ -6,6 +6,5 @@ public class ListNode {
 
     ListNode(int x) {
         val = x;
-        next = null;
     }
 }

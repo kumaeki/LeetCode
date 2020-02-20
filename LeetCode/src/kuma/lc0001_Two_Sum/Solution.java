@@ -1,4 +1,4 @@
-package kuma.lc001_Two_Sum;
+package kuma.lc0001_Two_Sum;
 
 import static org.junit.Assert.assertArrayEquals;
 

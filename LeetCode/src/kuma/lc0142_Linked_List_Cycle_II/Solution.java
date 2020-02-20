@@ -1,22 +1,26 @@
-package kuma.lc141_Linked_List_Cycle;
+package kuma.lc0142_Linked_List_Cycle_II;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class Solution {
-
-    public boolean hasCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
-
         while (fast != null && fast.next != null && slow != null) {
             fast = fast.next.next;
             slow = slow.next;
-            if (fast == slow)
-                return true;
+            if (fast == slow) {
+                fast = head;
+                while (fast != slow) {
+                    fast = fast.next;
+                    slow = slow.next;
+                }
+                return fast;
+            }
         }
-
-        return false;
+        return null;
     }
 
     public static ListNode createList(int[] list, int index) {
@@ -40,12 +44,23 @@ public class Solution {
         return head;
     }
 
+    public static ListNode getEntrance(ListNode head, int index) {
+        if (index < 0)
+            return null;
+        ListNode entrance = head;
+        for (int i = 0; i < index; i++) {
+            entrance = entrance.next;
+        }
+        return entrance;
+    }
+
     @Test
     public void TestSimple1() {
         int[] list = new int[] { 3, 2, 0, -4 };
-        int index = 2;
+        int index = 1;
         ListNode head = createList(list, index);
-        assertEquals(true, new Solution().hasCycle(head));
+        ListNode entrance = getEntrance(head, index);
+        assertEquals(entrance, new Solution().detectCycle(head));
     }
 
     @Test
@@ -53,7 +68,8 @@ public class Solution {
         int[] list = new int[] { 1, 2 };
         int index = 0;
         ListNode head = createList(list, index);
-        assertEquals(true, new Solution().hasCycle(head));
+        ListNode entrance = getEntrance(head, index);
+        assertEquals(entrance, new Solution().detectCycle(head));
     }
 
     @Test
@@ -61,6 +77,7 @@ public class Solution {
         int[] list = new int[] { 1 };
         int index = -1;
         ListNode head = createList(list, index);
-        assertEquals(false, new Solution().hasCycle(head));
+        ListNode entrance = getEntrance(head, index);
+        assertEquals(entrance, new Solution().detectCycle(head));
     }
 }

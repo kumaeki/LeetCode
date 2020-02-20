@@ -1,4 +1,4 @@
-package kuma.lc002_Add_Two_Numbers;
+package kuma.lc0002_Add_Two_Numbers;
 
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;

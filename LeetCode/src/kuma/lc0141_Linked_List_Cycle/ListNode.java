@@ -1,4 +1,4 @@
-package kuma.lc141_Linked_List_Cycle;
+package kuma.lc0141_Linked_List_Cycle;
 
 public class ListNode {
     int val;

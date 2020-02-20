@@ -1,4 +1,4 @@
-package kuma.lc139_WordBreak;
+package kuma.lc0139_WordBreak;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

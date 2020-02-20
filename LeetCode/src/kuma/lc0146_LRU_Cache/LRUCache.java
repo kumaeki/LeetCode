@@ -1,4 +1,4 @@
-package kuma.lc146_LRU_Cache;
+package kuma.lc0146_LRU_Cache;
 
 import java.util.HashMap;
 import java.util.Map;
