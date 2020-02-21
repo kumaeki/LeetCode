@@ -44,6 +44,27 @@ public class Solution {
 
     @Test
     public void testSimple1() {
+        int actual = new Solution().maxSumDivThree(new int[] { 3, 6, 5, 1, 8 });
+        int expected = 18;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSimple2() {
+        int actual = new Solution().maxSumDivThree(new int[] { 4 });
+        int expected = 0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSimple3() {
+        int actual = new Solution().maxSumDivThree(new int[] { 1, 2, 3, 4, 4 });
+        int expected = 12;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSimple4() {
         int actual = new Solution().maxSumDivThree(new int[] { 2, 6, 2, 2, 7 });
         int expected = 15;
         assertEquals(expected, actual);
