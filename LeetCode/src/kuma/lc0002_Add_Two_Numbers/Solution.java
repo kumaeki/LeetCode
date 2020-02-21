@@ -1,9 +1,6 @@
 package kuma.lc0002_Add_Two_Numbers;
 
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.Test;
 
 public class Solution {
