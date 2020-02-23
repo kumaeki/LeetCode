@@ -37,13 +37,45 @@ public class Solution {
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++) {
                 boolean isCharMatch = s.charAt(i) == p.charAt(j) || p.charAt(j) == '.';
-                boolean isPreCharMatch = j > 0  && (s.charAt(i) == p.charAt(j - 1) || p.charAt(j - 1) == '.');
+                boolean isPreCharMatch = j > 0 && (s.charAt(i) == p.charAt(j - 1) || p.charAt(j - 1) == '.');
                 if (j > 0 && p.charAt(j) == '*')
                     dp[i + 1][j + 1] = dp[i + 1][j - 1] || (isPreCharMatch && dp[i][j + 1]);
                 else
                     dp[i + 1][j + 1] = isCharMatch && dp[i][j];
             }
         return dp[m][n];
+    }
+
+    public boolean isMatch4(String s, String p) {
+
+        int m = s.length(), n = p.length();
+        boolean[][] dp = new boolean[m + 1][n + 1];
+        dp[0][0] = true;
+
+        for (int j = 0; j < n; j++) {
+            if (p.charAt(j) == '*')
+                dp[0][j + 1] = dp[0][j - 1];
+        }
+
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++) {
+
+                if (isCharMatch(s.charAt(i), p.charAt(j)))
+                    dp[i + 1][j + 1] = dp[i][j];
+
+                if (p.charAt(j) == '*') {
+                    if (isCharMatch(s.charAt(i), p.charAt(j - 1))) {
+                        dp[i + 1][j + 1] = dp[i + 1][j + 1] || dp[i + 1][j - 1] || dp[i][j - 1] || dp[i][j + 1];
+                    } else {
+                        dp[i + 1][j + 1] = dp[i + 1][j + 1] || dp[i + 1][j - 1];
+                    }
+                }
+            }
+        return dp[m][n];
+    }
+
+    private boolean isCharMatch(char c1, char c2) {
+        return c1 == c2 || c2 == '.';
     }
 
     public boolean isMatch2(String s, String p) {
