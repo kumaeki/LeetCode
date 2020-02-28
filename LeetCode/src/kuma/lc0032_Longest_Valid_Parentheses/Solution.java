@@ -2,6 +2,7 @@ package kuma.lc0032_Longest_Valid_Parentheses;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 import java.util.Stack;
 
 import org.junit.Test;
