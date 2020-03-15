@@ -1,5 +1,10 @@
 package kuma.lc1381_Design_a_Stack_With_Increment_Operation;
 
+<<<<<<< HEAD
+=======
+import org.junit.jupiter.api.Test;
+
+>>>>>>> branch 'master' of https://github.com/kumaeki/LeetCode.git
 class CustomStack {
 
     int[] arr;
