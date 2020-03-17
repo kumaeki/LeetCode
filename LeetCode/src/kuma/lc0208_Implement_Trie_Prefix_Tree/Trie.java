@@ -1,7 +1,5 @@
 package kuma.lc0208_Implement_Trie_Prefix_Tree;
 
-import java.util.*;
-
 class Trie {
 
     TreeNode root;
