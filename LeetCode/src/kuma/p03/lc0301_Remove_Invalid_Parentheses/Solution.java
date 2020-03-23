@@ -24,7 +24,7 @@ public class Solution {
     }
 
     private void helper(String s, int index, int left, int right, int nll, int nlr, StringBuilder sb, Set<String> set) {
-        if(nll + nlr > s.length() - index)
+        if (nll + nlr > s.length() - index)
             return;
         else if (index == s.length()) {
             if (nll == 0 && nlr == 0)
