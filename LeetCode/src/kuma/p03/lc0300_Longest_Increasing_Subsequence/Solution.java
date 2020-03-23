@@ -1,4 +1,4 @@
-package kuma.p02.lc0300_Longest_Increasing_Subsequence;
+package kuma.p03.lc0300_Longest_Increasing_Subsequence;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
