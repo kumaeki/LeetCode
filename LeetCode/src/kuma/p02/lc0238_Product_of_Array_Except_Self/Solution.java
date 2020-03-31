@@ -4,6 +4,8 @@ import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 
 public class Solution {
+    // Runtime: 1 ms, faster than 100.00% of Java online submissions for Product of Array Except Self.
+    // Memory Usage: 48.6 MB, less than 5.51% of Java online submissions for Product of Array Except Self.
     public int[] productExceptSelf(int[] nums) {
         int len = nums.length;
         int[] res = new int[len];
