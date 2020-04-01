@@ -4,7 +4,10 @@ import java.util.*;
 
 public class Solution {
 
-    // circle linked list(slow and fast)
+    // Runtime: 0 ms, faster than 100.00% of Java online submissions for Find the
+    // Duplicate Number.
+    // Memory Usage: 39.9 MB, less than 5.09% of Java online submissions for Find
+    // the Duplicate Number.
     public int findDuplicate(int[] nums) {
         int fast = 0, slow = 0;
         do {
