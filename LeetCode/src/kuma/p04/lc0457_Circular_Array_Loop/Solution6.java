@@ -1,7 +1,6 @@
 package kuma.p04.lc0457_Circular_Array_Loop;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
 
 class Solution6 {
