@@ -1,7 +1,5 @@
 package kuma.p00.lc0024_Swap_Nodes_in_Pairs;
 
-import java.util.*;
-
 import kuma.common.ListNode;
 
 public class Solution2 {
