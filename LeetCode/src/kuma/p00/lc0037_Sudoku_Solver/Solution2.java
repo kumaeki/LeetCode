@@ -1,7 +1,5 @@
 package kuma.p00.lc0037_Sudoku_Solver;
 
-import java.util.*;
-
 public class Solution2 {
     // Runtime: 2 ms, faster than 98.80% of Java online submissions for Sudoku
     // Solver.
