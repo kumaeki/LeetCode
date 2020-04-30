@@ -1,7 +1,5 @@
 package kuma.p00.lc0081_Search_in_Rotated_Sorted_Array_II;
 
-import java.util.Arrays;
-
 public class Solution2 {
     // Runtime: 0 ms, faster than 100.00% of Java online submissions for Search in
     // Rotated Sorted Array II.
