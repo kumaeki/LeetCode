@@ -33,7 +33,7 @@ public class Solution {
                 helper(list, num, target, i + 1, res - cur, -cur, path + "-" + cur);
                 helper(list, num, target, i + 1, res - pre + pre * cur, pre * cur, path + "*" + cur);
             }
-            if (num.charAt(i) == '0')
+            if (num.charAt(index) == '0')
                 break;
         }
     }
