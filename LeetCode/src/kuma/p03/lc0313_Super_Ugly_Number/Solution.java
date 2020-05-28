@@ -12,7 +12,6 @@ public class Solution {
     public int nthSuperUglyNumber(int n, int[] primes) {
         int len = primes.length;
         int[] ugly = new int[n], indexs = new int[len];
-        ;
         ugly[0] = 1;
 
         for (int i = 1; i < n; i++) {
