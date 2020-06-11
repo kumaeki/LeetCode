@@ -1,7 +1,5 @@
 package kuma.p00.lc0087_Scramble_String;
 
-import java.util.*;
-
 public class Solution {
     // Runtime: 10 ms, faster than 24.33% of Java online submissions for Scramble
     // String.
