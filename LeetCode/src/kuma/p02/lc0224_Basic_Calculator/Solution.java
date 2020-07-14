@@ -47,7 +47,7 @@ public class Solution {
     }
 
     @Test
-    public void simple‚Q() {
+    public void simple2() {
         assertEquals(2, new Solution().calculate("2-(5-6 - (7 - 8))"));
     }
 }

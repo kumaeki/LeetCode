@@ -3,6 +3,7 @@ package kuma;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Test {
+    // 试试中文
     public boolean checkInclusion(String s1, String s2) {
         int n1 = s1.length(), n2 = s2.length();
         if (n1 > n2)
