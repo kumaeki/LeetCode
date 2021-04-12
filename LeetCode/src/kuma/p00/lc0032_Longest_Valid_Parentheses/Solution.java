@@ -1,12 +1,5 @@
 package kuma.p00.lc0032_Longest_Valid_Parentheses;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-
-import java.util.Stack;
-
-import org.junit.Test;
-
 public class Solution {
     public int longestValidParentheses(String s) {
         Stack<Integer> stack = new Stack<Integer>();
@@ -24,25 +17,5 @@ public class Solution {
             }
         }
         return res;
-    }
-
-    @Test
-    public void testSimple1() {
-        assertEquals(2, new Solution().longestValidParentheses("(()"));
-    }
-
-    @Test
-    public void testSimple2() {
-        assertEquals(4, new Solution().longestValidParentheses(")()())"));
-    }
-
-    @Test
-    public void testSimple3() {
-        assertEquals(20, new Solution().longestValidParentheses("(()()()()()()()()()()"));
-    }
-
-    @Test
-    public void testSimple4() {
-        assertEquals(6, new Solution().longestValidParentheses("(()())"));
     }
 }
