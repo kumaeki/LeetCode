@@ -24,24 +24,4 @@ public class Solution3 {
         }
         return res;
     }
-
-    @Test
-    public void testSimple1() {
-        assertEquals(2, new Solution3().longestValidParentheses("(()"));
-    }
-
-    @Test
-    public void testSimple2() {
-        assertEquals(4, new Solution3().longestValidParentheses(")()())"));
-    }
-
-    @Test
-    public void testSimple3() {
-        assertEquals(20, new Solution3().longestValidParentheses("(()()()()()()()()()()"));
-    }
-
-    @Test
-    public void testSimple4() {
-        assertEquals(6, new Solution3().longestValidParentheses("(()())"));
-    }
 }
