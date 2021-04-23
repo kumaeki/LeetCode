@@ -8,4 +8,6 @@ Welcome to the my LeetCode memo!<br/>
 
 [0589. N-ary Tree Preorder Traversal](https://github.com/kumaeki/LeetCode/wiki/0589.-N-ary-Tree-Preorder-Traversal)
 
+[0696. Count Binary Substrings](https://github.com/kumaeki/LeetCode/wiki/0696.-Count-Binary-Substrings)
+
 [1209. Remove All Adjacent Duplicates in String II](https://github.com/kumaeki/LeetCode/wiki/1209.-Remove-All-Adjacent-Duplicates-in-String-II)
